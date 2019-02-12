@@ -1,5 +1,6 @@
 package learning 
  
 fun main(args : Array<String>) { 
-  println("Start") 
+  val last = listOf(1, 2, 3, 4, 5).last()
+  println(last) 
 }
