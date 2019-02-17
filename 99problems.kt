@@ -25,6 +25,15 @@ fun main(args : Array<String>) {
   val flat = mutableListOf<Any?>()
   flattenList(nested, flat)
   println("(07) $flat")
+
+  val nested = listOf(1, listOf(5), listOf(1,3))
+  val flat = mutableListOf<Any?>()
+  flattenList(nested, flat)
+  println("(07) $flat")
+
+  //val base = arrayOf("a", "b", "b", "c", "c", "d")
+  //var compress = base.distinct()
+  //println("(08) $compress")
 }
 
 fun nth(n: Int, list: List<Int>) = list[n+1]
